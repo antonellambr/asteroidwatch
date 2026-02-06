@@ -2,6 +2,8 @@
 
 Un'applicazione web che traccia gli asteroidi vicini alla Terra utilizzando le API NASA NeoWs (Near Earth Object Web Service).
 
+**[Demo Live](https://antonellambr.github.io/asteroidwatch/)**
+
 ## Funzionalità
 
 - **Monitoraggio in tempo reale**: carica i dati degli asteroidi per i prossimi 7 giorni
@@ -44,7 +46,7 @@ asteroid-watch/
 
 1. Clona il repository
    ```bash
-   git clone https://github.com/TUO-USERNAME/asteroid-watch.git
+   git clone https://github.com/antonellambr/asteroidwatch.git
    ```
 
 2. Ottieni una API key gratuita da [NASA API](https://api.nasa.gov/)
