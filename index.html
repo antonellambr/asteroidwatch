@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Asteroid Watch</h1>
+        <p class="subtitle">Near Earth Objects Tracker &mdash; NASA NeoWs API</p>
+    </header>
+
+    <main>
+        <section id="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p id="progress-text">0/7 giorni caricati</p>
+        </section>
+
+        <section id="filters">
+            <button class="filter-btn active" data-filter="all">Tutti</button>
+            <button class="filter-btn" data-filter="hazardous">Solo pericolosi</button>
+            <button class="filter-btn" data-filter="distance">Ordina per distanza</button>
+            <button class="filter-btn" data-filter="size">Ordina per dimensione</button>
+        </section>
+
+        <section id="summary">
+            <div class="summary-box">
+                <span class="summary-label">Totale asteroidi</span>
+                <span class="summary-value" id="total-count">&mdash;</span>
+            </div>
+            <div class="summary-box">
+                <span class="summary-label">Pericolosi</span>
+                <span class="summary-value" id="hazardous-count">&mdash;</span>
+            </div>
+            <div class="summary-box">
+                <span class="summary-label">Il più grande</span>
+                <span class="summary-value" id="largest">&mdash;</span>
+            </div>
+            <div class="summary-box">
+                <span class="summary-label">Il più vicino</span>
+                <span class="summary-value" id="closest">&mdash;</span>
+            </div>
+        </section>
+
+        <section id="asteroid-grid"></section>
+    </main>
+
+    <footer>
+        <p>Data from <a href="https://api.nasa.gov/" target="_blank" rel="noopener">NASA NeoWs API</a></p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
